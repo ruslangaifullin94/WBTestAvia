@@ -7,34 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A655D7B2A325608005CDD31 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A655D7A2A325608005CDD31 /* CoordinatorProtocol.swift */; };
+		5A655D7D2A3256AB005CDD31 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A655D7C2A3256AB005CDD31 /* MainCoordinator.swift */; };
+		5A655D7F2A3256BC005CDD31 /* TicketsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A655D7E2A3256BC005CDD31 /* TicketsCoordinator.swift */; };
+		5A655D852A326541005CDD31 /* TicketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A655D842A326541005CDD31 /* TicketsViewModel.swift */; };
+		5A655D892A327B92005CDD31 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A655D882A327B92005CDD31 /* DetailViewModel.swift */; };
+		5A655D8E2A336B64005CDD31 /* AlertNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A655D8D2A336B63005CDD31 /* AlertNotifications.swift */; };
+		5A655D912A33BB08005CDD31 /* CoreNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A655D902A33BB08005CDD31 /* CoreNetworkService.swift */; };
+		5A655D952A33D115005CDD31 /* CoreNetworkSeviceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A655D942A33D115005CDD31 /* CoreNetworkSeviceErrors.swift */; };
+		5A655D982A344B3A005CDD31 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A655D972A344B3A005CDD31 /* DateManager.swift */; };
+		5A655D9E2A3666E6005CDD31 /* CustomPriceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A655D9D2A3666E6005CDD31 /* CustomPriceButton.swift */; };
 		5AF6D5672A12A023003640B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D5662A12A023003640B5 /* AppDelegate.swift */; };
 		5AF6D5692A12A023003640B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D5682A12A023003640B5 /* SceneDelegate.swift */; };
-		5AF6D56B2A12A023003640B5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D56A2A12A023003640B5 /* MainViewController.swift */; };
+		5AF6D56B2A12A023003640B5 /* TicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D56A2A12A023003640B5 /* TicketsViewController.swift */; };
 		5AF6D5702A12A025003640B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF6D56F2A12A025003640B5 /* Assets.xcassets */; };
 		5AF6D5732A12A025003640B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF6D5712A12A025003640B5 /* LaunchScreen.storyboard */; };
 		5AF6D57C2A12A248003640B5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D57B2A12A248003640B5 /* DetailViewController.swift */; };
 		5AF6D57F2A12A281003640B5 /* TicketViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D57E2A12A281003640B5 /* TicketViewCell.swift */; };
-		5AF6D5812A12A2BB003640B5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D5802A12A2BB003640B5 /* NetworkManager.swift */; };
-		5AF6D5842A12A367003640B5 /* CellReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D5832A12A367003640B5 /* CellReuse.swift */; };
-		5AF6D5872A12A44C003640B5 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D5862A12A44C003640B5 /* JsonDecoder.swift */; };
-		5AF6D58A2A12AC4E003640B5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5AF6D5892A12AC4E003640B5 /* SnapKit */; };
-		5AF6D58C2A12B2FE003640B5 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D58B2A12B2FE003640B5 /* Data.swift */; };
+		5AF6D5812A12A2BB003640B5 /* TicketsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D5802A12A2BB003640B5 /* TicketsNetworkService.swift */; };
+		5AF6D5872A12A44C003640B5 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D5862A12A44C003640B5 /* Ticket.swift */; };
+		5AF6D58C2A12B2FE003640B5 /* AviaFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6D58B2A12B2FE003640B5 /* AviaFlight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A655D7A2A325608005CDD31 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		5A655D7C2A3256AB005CDD31 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		5A655D7E2A3256BC005CDD31 /* TicketsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsCoordinator.swift; sourceTree = "<group>"; };
+		5A655D842A326541005CDD31 /* TicketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewModel.swift; sourceTree = "<group>"; };
+		5A655D882A327B92005CDD31 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		5A655D8D2A336B63005CDD31 /* AlertNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertNotifications.swift; sourceTree = "<group>"; };
+		5A655D902A33BB08005CDD31 /* CoreNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNetworkService.swift; sourceTree = "<group>"; };
+		5A655D942A33D115005CDD31 /* CoreNetworkSeviceErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNetworkSeviceErrors.swift; sourceTree = "<group>"; };
+		5A655D972A344B3A005CDD31 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		5A655D9D2A3666E6005CDD31 /* CustomPriceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPriceButton.swift; sourceTree = "<group>"; };
 		5AF6D5632A12A023003640B5 /* WBTestAvia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBTestAvia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF6D5662A12A023003640B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AF6D5682A12A023003640B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5AF6D56A2A12A023003640B5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5AF6D56A2A12A023003640B5 /* TicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewController.swift; sourceTree = "<group>"; };
 		5AF6D56F2A12A025003640B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AF6D5722A12A025003640B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AF6D5742A12A025003640B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AF6D57B2A12A248003640B5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5AF6D57E2A12A281003640B5 /* TicketViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewCell.swift; sourceTree = "<group>"; };
-		5AF6D5802A12A2BB003640B5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		5AF6D5832A12A367003640B5 /* CellReuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReuse.swift; sourceTree = "<group>"; };
-		5AF6D5862A12A44C003640B5 /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
-		5AF6D58B2A12B2FE003640B5 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5AF6D5802A12A2BB003640B5 /* TicketsNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsNetworkService.swift; sourceTree = "<group>"; };
+		5AF6D5862A12A44C003640B5 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		5AF6D58B2A12B2FE003640B5 /* AviaFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaFlight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,13 +59,113 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AF6D58A2A12AC4E003640B5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A655D792A3255F2005CDD31 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				5A655D7A2A325608005CDD31 /* CoordinatorProtocol.swift */,
+				5A655D7C2A3256AB005CDD31 /* MainCoordinator.swift */,
+				5A655D7E2A3256BC005CDD31 /* TicketsCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		5A655D832A3264CB005CDD31 /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				5AF6D57D2A12A24B003640B5 /* Cell */,
+				5A655D932A33BB5F005CDD31 /* Models */,
+				5AF6D56A2A12A023003640B5 /* TicketsViewController.swift */,
+				5A655D842A326541005CDD31 /* TicketsViewModel.swift */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+		5A655D862A327ABB005CDD31 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5AF6D5662A12A023003640B5 /* AppDelegate.swift */,
+				5AF6D5682A12A023003640B5 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5A655D872A327AD2005CDD31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AF6D56F2A12A025003640B5 /* Assets.xcassets */,
+				5AF6D5712A12A025003640B5 /* LaunchScreen.storyboard */,
+				5AF6D5742A12A025003640B5 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A655D8F2A336B68005CDD31 /* PublicModels */ = {
+			isa = PBXGroup;
+			children = (
+				5A655D8D2A336B63005CDD31 /* AlertNotifications.swift */,
+				5A655D972A344B3A005CDD31 /* DateManager.swift */,
+			);
+			path = PublicModels;
+			sourceTree = "<group>";
+		};
+		5A655D932A33BB5F005CDD31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AF6D5802A12A2BB003640B5 /* TicketsNetworkService.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A655D992A365894005CDD31 /* CoreService */ = {
+			isa = PBXGroup;
+			children = (
+				5A655D9F2A366AA9005CDD31 /* Models */,
+				5A655D9C2A3666CC005CDD31 /* CustomUI */,
+				5A655D9A2A3658A1005CDD31 /* Network */,
+			);
+			path = CoreService;
+			sourceTree = "<group>";
+		};
+		5A655D9A2A3658A1005CDD31 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5A655D902A33BB08005CDD31 /* CoreNetworkService.swift */,
+				5A655D942A33D115005CDD31 /* CoreNetworkSeviceErrors.swift */,
+				5A655D9B2A3658AB005CDD31 /* Model */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5A655D9B2A3658AB005CDD31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5AF6D5862A12A44C003640B5 /* Ticket.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A655D9C2A3666CC005CDD31 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				5A655D9D2A3666E6005CDD31 /* CustomPriceButton.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		5A655D9F2A366AA9005CDD31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AF6D58B2A12B2FE003640B5 /* AviaFlight.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5AF6D55A2A12A023003640B5 = {
 			isa = PBXGroup;
 			children = (
@@ -68,52 +185,32 @@
 		5AF6D5652A12A023003640B5 /* WBTestAvia */ = {
 			isa = PBXGroup;
 			children = (
-				5AF6D5852A12A439003640B5 /* Data */,
-				5AF6D5822A12A2C0003640B5 /* Network */,
-				5AF6D57D2A12A24B003640B5 /* Cell */,
-				5AF6D57A2A12A22F003640B5 /* Controllers */,
-				5AF6D5662A12A023003640B5 /* AppDelegate.swift */,
-				5AF6D5682A12A023003640B5 /* SceneDelegate.swift */,
-				5AF6D56F2A12A025003640B5 /* Assets.xcassets */,
-				5AF6D5712A12A025003640B5 /* LaunchScreen.storyboard */,
-				5AF6D5742A12A025003640B5 /* Info.plist */,
+				5A655D992A365894005CDD31 /* CoreService */,
+				5A655D862A327ABB005CDD31 /* Application */,
+				5A655D792A3255F2005CDD31 /* Coordinators */,
+				5A655D832A3264CB005CDD31 /* Tickets */,
+				5AF6D57A2A12A22F003640B5 /* Details */,
+				5A655D8F2A336B68005CDD31 /* PublicModels */,
+				5A655D872A327AD2005CDD31 /* Resources */,
 			);
 			path = WBTestAvia;
 			sourceTree = "<group>";
 		};
-		5AF6D57A2A12A22F003640B5 /* Controllers */ = {
+		5AF6D57A2A12A22F003640B5 /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				5AF6D56A2A12A023003640B5 /* MainViewController.swift */,
 				5AF6D57B2A12A248003640B5 /* DetailViewController.swift */,
+				5A655D882A327B92005CDD31 /* DetailViewModel.swift */,
 			);
-			path = Controllers;
+			path = Details;
 			sourceTree = "<group>";
 		};
 		5AF6D57D2A12A24B003640B5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				5AF6D57E2A12A281003640B5 /* TicketViewCell.swift */,
-				5AF6D5832A12A367003640B5 /* CellReuse.swift */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		5AF6D5822A12A2C0003640B5 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				5AF6D5862A12A44C003640B5 /* JsonDecoder.swift */,
-				5AF6D5802A12A2BB003640B5 /* NetworkManager.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		5AF6D5852A12A439003640B5 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				5AF6D58B2A12B2FE003640B5 /* Data.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +230,6 @@
 			);
 			name = WBTestAvia;
 			packageProductDependencies = (
-				5AF6D5892A12AC4E003640B5 /* SnapKit */,
 			);
 			productName = WBTestAvia;
 			productReference = 5AF6D5632A12A023003640B5 /* WBTestAvia.app */;
@@ -164,7 +260,6 @@
 			);
 			mainGroup = 5AF6D55A2A12A023003640B5;
 			packageReferences = (
-				5AF6D5882A12AC4E003640B5 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 5AF6D5642A12A023003640B5 /* Products */;
 			projectDirPath = "";
@@ -192,14 +287,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AF6D5842A12A367003640B5 /* CellReuse.swift in Sources */,
-				5AF6D56B2A12A023003640B5 /* MainViewController.swift in Sources */,
+				5AF6D56B2A12A023003640B5 /* TicketsViewController.swift in Sources */,
+				5A655D7F2A3256BC005CDD31 /* TicketsCoordinator.swift in Sources */,
+				5A655D952A33D115005CDD31 /* CoreNetworkSeviceErrors.swift in Sources */,
+				5A655D7B2A325608005CDD31 /* CoordinatorProtocol.swift in Sources */,
 				5AF6D5672A12A023003640B5 /* AppDelegate.swift in Sources */,
-				5AF6D5812A12A2BB003640B5 /* NetworkManager.swift in Sources */,
-				5AF6D5872A12A44C003640B5 /* JsonDecoder.swift in Sources */,
+				5A655D8E2A336B64005CDD31 /* AlertNotifications.swift in Sources */,
+				5AF6D5812A12A2BB003640B5 /* TicketsNetworkService.swift in Sources */,
+				5A655D982A344B3A005CDD31 /* DateManager.swift in Sources */,
+				5A655D7D2A3256AB005CDD31 /* MainCoordinator.swift in Sources */,
+				5A655D852A326541005CDD31 /* TicketsViewModel.swift in Sources */,
+				5A655D9E2A3666E6005CDD31 /* CustomPriceButton.swift in Sources */,
+				5AF6D5872A12A44C003640B5 /* Ticket.swift in Sources */,
 				5AF6D5692A12A023003640B5 /* SceneDelegate.swift in Sources */,
 				5AF6D57C2A12A248003640B5 /* DetailViewController.swift in Sources */,
-				5AF6D58C2A12B2FE003640B5 /* Data.swift in Sources */,
+				5A655D912A33BB08005CDD31 /* CoreNetworkService.swift in Sources */,
+				5AF6D58C2A12B2FE003640B5 /* AviaFlight.swift in Sources */,
+				5A655D892A327B92005CDD31 /* DetailViewModel.swift in Sources */,
 				5AF6D57F2A12A281003640B5 /* TicketViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +444,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WBTestAvia/Info.plist;
+				INFOPLIST_FILE = WBTestAvia/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -367,7 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WBTestAvia/Info.plist;
+				INFOPLIST_FILE = WBTestAvia/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -408,25 +512,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		5AF6D5882A12AC4E003640B5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5AF6D5892A12AC4E003640B5 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5AF6D5882A12AC4E003640B5 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AF6D55B2A12A023003640B5 /* Project object */;
 }
