@@ -199,7 +199,7 @@ final class TicketViewCell: UICollectionViewCell {
     
     @objc private func didTapLike() {
         guard let ticket else {return}
-        ticket.likeCheck.toggle()
+//        ticket.likeCheck.toggle()
         delegate?.reload(ticket: ticket)
     }
 }

@@ -70,6 +70,7 @@ extension TicketsNetworkService: TicketsNetworkServiceProtocol {
                 let date = DateManager.shared
                 let aviaFlights = tickets.flights.map {
                     AviaFlight(
+                        searchToken: $0.searchToken,
                         cityArrival: $0.endCity,
                         cityDeparture: $0.startCity,
                         price: $0.price,

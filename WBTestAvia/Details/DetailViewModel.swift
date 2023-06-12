@@ -35,11 +35,14 @@ final class DetailViewModel {
         }
     }
     
+    private weak var delegate: TicketChangeStateDelegateProtocol?
+    
     
     //MARK: - Init
 
-    init(ticket: AviaFlight) {
+    init(ticket: AviaFlight, delegate: TicketChangeStateDelegateProtocol?) {
         self.ticket = ticket
+        self.delegate = delegate
     }
     
 }
@@ -50,6 +53,6 @@ final class DetailViewModel {
 extension DetailViewModel: DetailViewModelProtocol {
     func didTapLike() {
         state = .didLikeToggle(before: ticket.likeCheck)
-        ticket.likeCheck.toggle()
+        delegate?.didChangeStateTickets(ticket: ticket)
     }
 }

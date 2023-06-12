@@ -8,7 +8,7 @@
 import UIKit
 
 protocol TicketsCoordinatorProtocol {
-    func pushDetailViewController(ticket: AviaFlight)
+    func pushDetailViewController(ticket: AviaFlight, delegate: TicketChangeStateDelegateProtocol?)
 }
 
 
@@ -49,8 +49,8 @@ extension TicketsCoordinator: CoordinatorProtocol {
 //MARK: - TicketsCoordinatorProtocol
 
 extension TicketsCoordinator: TicketsCoordinatorProtocol {
-    func pushDetailViewController(ticket: AviaFlight) {
-        let detailViewModel = DetailViewModel(ticket: ticket)
+    func pushDetailViewController(ticket: AviaFlight, delegate: TicketChangeStateDelegateProtocol?) {
+        let detailViewModel = DetailViewModel(ticket: ticket, delegate: delegate)
         let ticketDetailViewController = DetailViewController(viewModel: detailViewModel)
         navigationController.pushViewController(ticketDetailViewController, animated: true)
     }

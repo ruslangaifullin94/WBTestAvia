@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol TicketChangeStateDelegateProtocol: AnyObject {
+    func didChangeStateTickets(ticket: AviaFlight)
+}
+
 protocol TicketsViewModelProtocol {
     var dataTicket: [AviaFlight] { get }
     var stateChanger: ((TicketsViewModel.State) -> Void)? { get set }
@@ -80,17 +84,28 @@ extension TicketsViewModel: TicketsViewModelProtocol {
                         self.state = .loadedError(error: "Нет соединения с сервером")
                     }
                 }
-                
             }
         }
     }
     
     func didTapCell(index: IndexPath) {
-        coordinator.pushDetailViewController(ticket: dataTicket[index.item])
+        coordinator.pushDetailViewController(ticket: dataTicket[index.item], delegate: self)
     }
     
     func didTapLikeInCell(ticket: AviaFlight) {
-        guard let index = dataTicket.firstIndex(where: {$0.uid == ticket.uid}) else {return}
+        guard let index = dataTicket.firstIndex(where: {$0.searchToken == ticket.searchToken}) else {return}
+        dataTicket[index].likeCheck.toggle()
         state = .reloadCell(index: IndexPath(item: index, section: 0))
+    }
+}
+
+
+
+//MARK: - TicketChangeStateDelegateProtocol
+
+extension TicketsViewModel: TicketChangeStateDelegateProtocol {
+    func didChangeStateTickets(ticket: AviaFlight) {
+        guard let index = dataTicket.firstIndex(where: {$0.searchToken == ticket.searchToken}) else {return}
+        dataTicket[index].likeCheck.toggle()
     }
 }
